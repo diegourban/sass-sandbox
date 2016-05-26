@@ -1,2 +1,1 @@
-# sass-test
-SASS Test
+# SASS test
