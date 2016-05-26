@@ -1,5 +1,9 @@
+// variables
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+
+// imports
+@import 'reset';
 
 body {
   font: 100% $font-stack;
