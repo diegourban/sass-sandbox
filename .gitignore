@@ -1,2 +1,8 @@
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
 .sass-cache/
 *.css.map
