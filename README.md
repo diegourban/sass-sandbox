@@ -1,1 +1,1 @@
-# SASS Sandbox
+# sass-sandbox
