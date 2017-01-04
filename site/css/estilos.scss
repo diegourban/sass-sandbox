@@ -1,5 +1,20 @@
+// Variaveis usadas no meu Sass
 $cor-padrao: #c24e4b;
 $cor-auxiliar: #1e2c35;
+$cor-branca: #fff;
+$raio-padrao: 0.3em;
+
+// Mixins usados no meus Sass
+@mixin borda-arredondada($raio: $raio-padrao) {
+  -webkit-border-radius: $raio;
+  -moz-border-radius: $raio;
+  border-radius: $raio;
+}
+
+@mixin sombra-padrao {
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
 
 /** Geral **/
 body {
@@ -98,9 +113,8 @@ header .container {
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredondada(50px);
+  @include sombra-padrao;
   font-weight: bold;
 }
 
@@ -166,7 +180,7 @@ header .container {
 }
 
 .planos h2 {
-  color: #fff;
+  color: $cor-branca;
 }
 
 .plano {
@@ -182,7 +196,7 @@ header .container {
 }
 
 .plano h3 {
-  color: #fff;
+  color: $cor-branca;
   font-size: 1.8em;
   background: $cor-padrao;
   text-align: center;
@@ -220,13 +234,12 @@ header .container {
 .plano button {
   background: $cor-padrao;
   border: 0;
-  color: #fff;
+  color: $cor-branca;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredondada;
+  @include sombra-padrao;
   margin-left: 2em;
 }
 
@@ -309,8 +322,7 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  @include borda-arredondada;
   border: 2px solid #ccc;
 }
 
@@ -318,13 +330,12 @@ textarea {
   margin: 0 auto;
   background: $cor-padrao;
   border: 0;
-  color: #fff;
+  color: $cor-branca;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredondada;
+  @include sombra-padrao;
 }
 
 /** Footer **/
@@ -392,7 +403,7 @@ footer .container img {
 }
 
 footer a {
-  color: #fff;
+  color: $cor-branca;
   text-decoration: none;
 }
 
