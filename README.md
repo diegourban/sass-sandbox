@@ -6,3 +6,12 @@
 ## Requirements
 - Ruby
 - Sass
+- Compass
+
+## Configuration
+Configure Compass file (config.rb)
+
+## Usage
+$ cd site
+$ compass create
+$ compass watch estilos.scss
